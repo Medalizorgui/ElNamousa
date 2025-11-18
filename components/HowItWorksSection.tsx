@@ -19,10 +19,10 @@ const StepCard: React.FC<StepProps> = ({ number, title, description, icon }) => 
           number === 1 
             ? 'bg-linear-to-br from-[#32ACCA] to-[#5ABACD]'
             : number === 2
-            ? 'bg-linear-to-br from-[#5ABACD] to-[#E26537]'
+            ? 'bg-linear-to-br from-[#32ACCA] to-[#5ABACD]'
             : number === 3
-            ? 'bg-linear-to-br from-[#E26537] to-[#32ACCA]'
-            : 'bg-linear-to-br from-[#32ACCA] to-[#E26537]'
+            ? 'bg-linear-to-br from-[#32ACCA] to-[#5ABACD]'
+            : 'bg-linear-to-br from-[#32ACCA] to-[#5ABACD]'
         }`}>
           <span className="text-4xl">{icon}</span>
         </div>
@@ -31,7 +31,7 @@ const StepCard: React.FC<StepProps> = ({ number, title, description, icon }) => 
       {/* Content */}
       <div className="text-center">
         <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">{title}</h3>
-        <p className="text-white/75">{description}</p>
+        <p className="text-white">{description}</p>
       </div>
     </div>
   );
@@ -76,13 +76,13 @@ export const HowItWorksSection = () => {
             number={1}
             icon="📦"
             title="Unbox"
-            description="Get your game set and familiarize with the cards"
+            description="Get your board set and place your pawn "
           />
           <StepCard 
             number={2}
             icon="🎲"
             title="Play"
-            description="Draw cards and complete hilarious challenges"
+            description="Roll the dice and complete hilarious challenges"
           />
           <StepCard 
             number={3}

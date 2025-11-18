@@ -93,10 +93,11 @@ export const HeroSection = () => {
           >
             🎮 Explore Now
           </button>
-          <button 
+          <button
+          onClick={() => document.getElementById('video')?.scrollIntoView({ behavior: 'smooth' })} 
             className="w-full sm:w-auto px-8 py-4 bg-white/15 backdrop-blur-md text-white font-bold rounded-full border-2 border-white/50 hover:bg-white/25 hover:border-white transition-all duration-300 text-lg hover:shadow-xl"
           >
-            📖 Learn More
+            👀 sneak peek
           </button>
         </div>
 

@@ -1,7 +1,11 @@
-// ============================================
+
+"use client";
+import React, { useState } from 'react';
+import { OrderModal } from '@/components/OrderModal';
 // COMPONENT: Header Navigation
 // ============================================
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       {/* Animated background */}
@@ -27,7 +31,7 @@ export const Header = () => {
           {/* Brand Text */}
           <div className="hidden sm:flex flex-col">
             <span className="text-white font-black text-sm md:text-base leading-tight">EL NAMOUSA</span>
-            <span className="text-[#32ACCA] text-xs font-semibold tracking-wider">TUNISIAN GAME</span>
+            <span className="text-[#32ACCA] text-xs font-semibold tracking-wider">DRINKING GAME</span>
           </div>
         </div>
         
@@ -49,9 +53,10 @@ export const Header = () => {
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#32ACCA] to-[#E26537] group-hover/link:w-full transition-all duration-300" />
           </a>
           
-          <button className="px-5 py-2 md:px-6 md:py-2 bg-linear-to-r from-[#32ACCA] to-[#E26537] text-white font-bold rounded-full text-sm md:text-base hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
+          <button onClick={() => setIsOpen(true)} className="px-5 py-2 md:px-6 md:py-2 bg-linear-to-r from-[#32ACCA] to-[#E26537] text-white font-bold rounded-full text-sm md:text-base hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
             Order Now
           </button>
+          <OrderModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </nav>
       </div>
     </header>

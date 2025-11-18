@@ -42,9 +42,6 @@ export const CTAFooter = () => {
               <button className="px-8 py-4 bg-linear-to-r from-[#32ACCA] via-[#5ABACD] to-[#E26537] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg">
                 Order Now 🛒
               </button>
-              <button className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-bold rounded-xl border-2 border-white hover:bg-white/30 hover:border-white/60 transition-all duration-300 text-lg hover:shadow-xl">
-                Get a Sneak Peek 👀
-              </button>
             </div>
           </div>
         </div>
