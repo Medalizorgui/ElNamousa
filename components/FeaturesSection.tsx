@@ -82,7 +82,7 @@ export const FeaturesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4">
             <span className="text-white">Why </span>
-            <span className="bg-linear-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent gradient-text">
+            <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent">
               El Namousa?
             </span>
           </h2>
@@ -108,7 +108,7 @@ export const FeaturesSection = () => {
             icon={<Globe className="w-8 h-8 text-white" />}
             title="Local Pride"
             description="Crafted with Tunisian spirit"
-            value="Made in 🇹🇳"
+            value="Made in Tunisia"
           />
         </div>
       </div>

@@ -33,7 +33,7 @@ export const CTAFooter = () => {
           
           <div className="relative bg-linear-to-br from-white/15 via-white/5 to-white/10 backdrop-blur-2xl rounded-3xl p-8 sm:p-12 border border-white/30 shadow-2xl">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4">
-              <span className="bg-linear-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent gradient-text">
+              <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent">
                 Ready to Play?
               </span>
             </h2>

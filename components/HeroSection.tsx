@@ -71,12 +71,12 @@ export const HeroSection = () => {
         {/* Title Section */}
         <div className="mb-12 sm:mb-16 space-y-5">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-black leading-tight">
-            <span className="bg-linear-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent gradient-text">
+            <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent">
               EL NAMOUSA
             </span>
           </h1>
           <p className="text-2xl sm:text-3xl md:text-4xl font-bold">
-            <span className="bg-linear-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent gradient-text">
+            <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent">
               The Ultimate Tunisian Drinking Game
             </span>
           </p>
