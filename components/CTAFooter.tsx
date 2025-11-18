@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
+import { OrderModal } from '@/components/OrderModal';
 // ============================================
 // COMPONENT: CTA Footer Section
 // ============================================
 export const CTAFooter = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="relative py-20 px-4 overflow-hidden">
       {/* Decorative Gradients */}
@@ -39,13 +42,17 @@ export const CTAFooter = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-linear-to-r from-[#32ACCA] via-[#5ABACD] to-[#E26537] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg">
+              <button onClick={() => setIsOpen(true)} className="px-8 py-4 bg-linear-to-r from-[#32ACCA] via-[#5ABACD] to-[#E26537] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg">
                 Order Now 🛒
               </button>
+              
             </div>
+            
           </div>
         </div>
       </div>
+      <OrderModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </section>
+    
   );
 };
