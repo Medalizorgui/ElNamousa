@@ -82,7 +82,7 @@ export const FeaturesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4">
             <span className="text-white">Why </span>
-            <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#00D9FF] via-white to-[#FF6B35] bg-clip-text text-transparent gradient-text">
               El Namousa?
             </span>
           </h2>
